@@ -44,8 +44,6 @@ allow interfacer system_data_file:file create_file_perms;
 allow interfacer system_file:dir { r_dir_perms rmdir };
 
 # Allow handling of theme assets
-allow interfacer theme_data_file:dir create_dir_perms;
-allow interfacer theme_data_file:file create_file_perms;
 
 # Modify system properties
 set_prop(interfacer, theme_prop)
@@ -61,4 +59,3 @@ allow interfacer content_service:service_manager find;
 allow interfacer display_service:service_manager find;
 allow interfacer mount_service:service_manager find;
 allow interfacer network_management_service:service_manager find;
-allow interfacer overlay_service:service_manager find;
